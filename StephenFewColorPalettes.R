@@ -107,14 +107,6 @@ paletteplot <- ggplot(plotdata, aes(x=colorname, y=palname, fill=hex))+
 paletteplot
 
 
-
-
-
-
-
-
-
-
 # try out new colors
 require("tidyverse")
 set.seed(3442523)
@@ -164,3 +156,4 @@ ggplot(testdata.gradient, aes(x=X, y=Y, fill=FV))+
   scale_fill_gradientn(colors=c(sfc.darker["blue"], sfc.medium["green"], sfc.light[c(8,5)], sfc.lighter[5]), name="") +
   labs(x="", y="")+
   theme_void()
+
